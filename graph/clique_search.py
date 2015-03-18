@@ -31,8 +31,6 @@ class CliqueSearch(object):
 
         # check neighbours as well
         for v in v1:
-            # print v, v2, sorted(self._get_target_vertices(v) + [v])
-            # if v2 != sorted(self._get_target_vertices(v) + [v]):
             if not self._list_in_list(v2, self._get_target_vertices(v) + [v]):
                 return False
 

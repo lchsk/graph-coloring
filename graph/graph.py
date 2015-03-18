@@ -10,14 +10,8 @@ class Graph(object):
         # Number of vertices
         self.V = len(self.vertices_set)
 
-        #self.V = vertices
-
         # Number of edges
         self.E = len(list_from)
-
-
-        # self.From = [0] * self.E
-        # self.To = [0] * self.E
 
         # Definition of the graph
         # ith edge points from vertex From[i] to vertex To[i]
