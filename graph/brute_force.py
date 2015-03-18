@@ -23,9 +23,11 @@ class BruteForce(object):
 
     def fix(self, r, length):
 
+        # Fill with zeroes at the beginning
         while len(r) < length:
             r.append(0)
 
+        # Inverse the lsit
         return r[::-1]
 
     def check(self, colour):
@@ -34,14 +36,16 @@ class BruteForce(object):
             v1 = self.graph.From[i]
             v2 = self.graph.To[i]
 
+            # Check if vertices are of the same colour
             if colour[v1] == colour[v2]:
                 # print 'Error : same colour for vertices %d and %d' % (col1, col2)
                 return False
 
         return True
 
-    def check_all_combinations(self, colours_n):
+    def run(self, colours_n):
 
+        # Number of combinations is colours^vertices
         for i in xrange(0, colours_n**self.graph.V):
 
             colour = self.fix(self.representation(i, colours_n), self.graph.V)
