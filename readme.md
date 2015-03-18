@@ -1,7 +1,9 @@
 # Graph coloring
 
 Checks whether given graph is k-colourable using one of the two methods:
-a) brute-force (checking every possible combination of colurs)
+
+a) brute-force (checking every possible combination of colours)
+
 b) searching for a clique in a graph
 
 **To run**
