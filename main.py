@@ -29,8 +29,6 @@ if __name__ == '__main__':
                 colours_n = int(arg)
             elif opt in ('-m', '--method'):
                 method = arg
-            else:
-                self.help()
 
     except getopt.GetoptError:
         print 'Error while reading the input'
